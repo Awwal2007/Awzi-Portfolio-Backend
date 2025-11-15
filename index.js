@@ -16,7 +16,7 @@ app.use(express.json())
 app.use('/api/v1/message', messageRouter)
 
 
-app.get("/", (req, res)=>{res.send("Welcome to EatEasy Api version 1.0")})
+app.get("/", (req, res)=>{res.send("Welcome to Awzi-dev Api version 1.0")})
 
 app.all("/{*any}", (req, res) => {
     res.json(`${req.method} ${req.originalUrl} is not an endpoint on this server.`)
